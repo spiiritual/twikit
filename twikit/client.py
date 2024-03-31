@@ -60,7 +60,7 @@ class Client:
         self.language = language
         self.http = HTTPClient(**kwargs)
         self._user_id = None
-        self._user_agent = UserAgent().random.strip()
+        self._user_agent = UserAgent().chrome
 
     def _get_guest_token(self) -> str:
         headers = self._base_headers
